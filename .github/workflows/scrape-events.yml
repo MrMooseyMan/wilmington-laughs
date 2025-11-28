@@ -1,0 +1,40 @@
+name: Scrape Comedy Events
+
+on:
+  # Run every Monday at 6 AM EST (11 AM UTC)
+  schedule:
+    - cron: '0 11 * * 1'
+  # Also allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run scraper
+        env:
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+        run: node scripts/scrape-events.js
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --quiet app.js || echo "changes=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push changes
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add app.js
+          git commit -m "Update events data - $(date +'%Y-%m-%d')"
+          git push

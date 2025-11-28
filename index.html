@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilmington Laughs | Comedy in the Port City</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Unbounded:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-logo">
+            <span class="logo-text">WILMINGTON LAUGHS</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#shows" class="nav-link">SHOWS</a></li>
+            <li><a href="#open-mics" class="nav-link">OPEN MICS</a></li>
+            <li><a href="#classes" class="nav-link">CLASSES</a></li>
+            <li><a href="#venues" class="nav-link">VENUES</a></li>
+            <li><a href="#comedians" class="nav-link">COMEDIANS</a></li>
+            <li><a href="#submit" class="nav-link nav-cta">SUBMIT EVENT</a></li>
+        </ul>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Wilmington</span>
+                <span class="title-line">Laughs</span>
+            </h1>
+            <p class="hero-subtitle">Your guide to comedy in the Port City</p>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- Quick Stats Bar -->
+    <section class="stats-bar">
+        <div class="stat">
+            <span class="stat-number" data-count="7">0</span>
+            <span class="stat-label">Open Mics Weekly</span>
+        </div>
+        <div class="stat">
+            <span class="stat-number" data-count="5">0</span>
+            <span class="stat-label">Comedy Venues</span>
+        </div>
+        <div class="stat">
+            <span class="stat-number" data-count="3">0</span>
+            <span class="stat-label">Improv Troupes</span>
+        </div>
+        <div class="stat">
+            <span class="stat-number" data-count="20">0</span>
+            <span class="stat-label">+ Local Comics</span>
+        </div>
+    </section>
+
+    <!-- This Week Section -->
+    <section class="this-week" id="shows">
+        <div class="section-header">
+            <h2 class="section-title">This Week</h2>
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">All</button>
+                <button class="filter-tab" data-filter="standup">Stand-Up</button>
+                <button class="filter-tab" data-filter="improv">Improv</button>
+                <button class="filter-tab" data-filter="openmic">Open Mic</button>
+                <button class="filter-tab" data-filter="workshop">Workshop</button>
+            </div>
+        </div>
+
+        <div class="events-grid" id="events-grid">
+            <!-- Events populated by JS -->
+        </div>
+    </section>
+
+    <!-- Weekly Schedule -->
+    <section class="weekly-schedule" id="open-mics">
+        <h2 class="section-title">Weekly Open Mics</h2>
+        <p class="section-desc">Never miss a chance to hit the stage or catch fresh material</p>
+
+        <div class="schedule-grid">
+            <div class="day-card" data-day="monday">
+                <div class="day-header">
+                    <span class="day-name">MON</span>
+                    <span class="day-dot"></span>
+                </div>
+                <div class="day-event">
+                    <h4>Barzarre Open Mic</h4>
+                    <p class="event-time">6:30 PM</p>
+                    <p class="event-venue">Barzarre (Juggling Gypsy)</p>
+                    <span class="event-tag free">FREE</span>
+                </div>
+            </div>
+
+            <div class="day-card" data-day="tuesday">
+                <div class="day-header">
+                    <span class="day-name">TUE</span>
+                    <span class="day-dot"></span>
+                </div>
+                <div class="day-event">
+                    <h4>Comedy Open Mic</h4>
+                    <p class="event-time">8:00 PM</p>
+                    <p class="event-venue">Port City Cheesesteak Co.</p>
+                    <span class="event-tag free">FREE</span>
+                </div>
+            </div>
+
+            <div class="day-card" data-day="wednesday">
+                <div class="day-header">
+                    <span class="day-name">WED</span>
+                    <span class="day-dot"></span>
+                </div>
+                <div class="day-event">
+                    <h4>Open Mic Night</h4>
+                    <p class="event-time">7:00 PM</p>
+                    <p class="event-venue">Laws & Libations</p>
+                    <span class="event-tag free">FREE</span>
+                </div>
+                <div class="day-event">
+                    <h4>Improv Night</h4>
+                    <p class="event-time">8:30 PM</p>
+                    <p class="event-venue">Dead Crow Comedy</p>
+                    <span class="event-tag free">FREE</span>
+                </div>
+            </div>
+
+            <div class="day-card" data-day="thursday">
+                <div class="day-header">
+                    <span class="day-name">THU</span>
+                    <span class="day-dot"></span>
+                </div>
+                <div class="day-event featured">
+                    <h4>Dead Crow Open Mic</h4>
+                    <p class="event-time">8:30 PM (Sign-up 7 PM)</p>
+                    <p class="event-venue">Dead Crow Comedy Room</p>
+                    <span class="event-tag free">FREE</span>
+                </div>
+                <div class="day-event">
+                    <h4>Women of Wilmington</h4>
+                    <p class="event-time">8:00 PM</p>
+                    <p class="event-venue">Laws & Libations</p>
+                    <span class="event-tag free">FREE</span>
+                </div>
+            </div>
+
+            <div class="day-card" data-day="friday">
+                <div class="day-header">
+                    <span class="day-name">FRI</span>
+                    <span class="day-dot"></span>
+                </div>
+                <div class="day-event">
+                    <h4>Weekend Headliner</h4>
+                    <p class="event-time">8:00 PM & 10:00 PM</p>
+                    <p class="event-venue">Dead Crow Comedy Room</p>
+                    <span class="event-tag">TICKETS</span>
+                </div>
+            </div>
+
+            <div class="day-card" data-day="saturday">
+                <div class="day-header">
+                    <span class="day-name">SAT</span>
+                    <span class="day-dot"></span>
+                </div>
+                <div class="day-event">
+                    <h4>Weekend Headliner</h4>
+                    <p class="event-time">7:00 PM & 9:30 PM</p>
+                    <p class="event-venue">Dead Crow Comedy Room</p>
+                    <span class="event-tag">TICKETS</span>
+                </div>
+            </div>
+
+            <div class="day-card" data-day="sunday">
+                <div class="day-header">
+                    <span class="day-name">SUN</span>
+                    <span class="day-dot"></span>
+                </div>
+                <div class="day-event muted">
+                    <p class="rest-day">Rest day for the funny bones</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venues Section -->
+    <section class="venues-section" id="venues">
+        <h2 class="section-title">Comedy Venues</h2>
+
+        <div class="venues-grid">
+            <article class="venue-card featured-venue">
+                <div class="venue-image" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
+                    <span class="venue-badge">Main Stage</span>
+                </div>
+                <div class="venue-info">
+                    <h3>Dead Crow Comedy Room</h3>
+                    <p class="venue-address">511 N. 3rd Street</p>
+                    <p class="venue-desc">Wilmington's only full-time comedy club. National touring acts, weekly open mics, improv nights, and the home of Cape Fear Comedy Festival.</p>
+                    <div class="venue-links">
+                        <a href="https://www.deadcrowcomedy.com" target="_blank" class="venue-link">Website</a>
+                        <a href="https://deadcrowcomedy-com.seatengine.com/" target="_blank" class="venue-link">Tickets</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="venue-card">
+                <div class="venue-image" style="background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);">
+                </div>
+                <div class="venue-info">
+                    <h3>Laws & Libations</h3>
+                    <p class="venue-address">108 Grace Street</p>
+                    <p class="venue-desc">Downtown bar hosting weekly open mics and the Women of Wilmington comedy showcase every Thursday.</p>
+                    <div class="venue-links">
+                        <a href="#" class="venue-link">Info</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="venue-card">
+                <div class="venue-image" style="background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);">
+                </div>
+                <div class="venue-info">
+                    <h3>Barzarre</h3>
+                    <p class="venue-address">1610 Castle Street</p>
+                    <p class="venue-desc">The "unusual bar" (formerly Juggling Gypsy) hosts the long-running Monday open mic. Nearly Anything Goes!</p>
+                    <div class="venue-links">
+                        <a href="https://barzarre.com" target="_blank" class="venue-link">Website</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="venue-card">
+                <div class="venue-image" style="background: linear-gradient(135deg, #00b894 0%, #55efc4 100%);">
+                </div>
+                <div class="venue-info">
+                    <h3>Waterline Brewing</h3>
+                    <p class="venue-address">721 Surry Street</p>
+                    <p class="venue-desc">Home of the bi-monthly Gruff Goat Comedy Showcase featuring local and touring stand-ups.</p>
+                    <div class="venue-links">
+                        <a href="#" class="venue-link">Info</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="venue-card">
+                <div class="venue-image" style="background: linear-gradient(135deg, #fd79a8 0%, #e84393 100%);">
+                </div>
+                <div class="venue-info">
+                    <h3>Port City Cheesesteak Co.</h3>
+                    <p class="venue-address">21 N. Front Street</p>
+                    <p class="venue-desc">Tuesday night comedy open mic downtown. Grab a cheesesteak and some laughs.</p>
+                    <div class="venue-links">
+                        <a href="#" class="venue-link">Info</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="venue-card">
+                <div class="venue-image" style="background: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%);">
+                </div>
+                <div class="venue-info">
+                    <h3>Wilson Center</h3>
+                    <p class="venue-address">CFCC Campus</p>
+                    <p class="venue-desc">Major touring acts and national comedy shows. Whose Live Anyway, Leanne Morgan, and more.</p>
+                    <div class="venue-links">
+                        <a href="https://www.cfcc.edu/wilsoncenter/" target="_blank" class="venue-link">Website</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section class="classes-section" id="classes">
+        <h2 class="section-title">Learn Comedy</h2>
+        <p class="section-desc">From stand-up to improv, Wilmington has classes for all levels</p>
+
+        <div class="classes-grid">
+            <article class="class-card">
+                <div class="class-header standup">
+                    <span class="class-type">Stand-Up</span>
+                </div>
+                <div class="class-content">
+                    <h3>Look Who's Standing Up!</h3>
+                    <p class="class-instructor">with Nancy Witter</p>
+                    <p class="class-desc">Multi-week course at Dead Crow Comedy Room. Learn writing, timing, and stage presence from an award-winning comedian. Culminates in a graduation showcase.</p>
+                    <div class="class-details">
+                        <span class="class-location">Dead Crow Comedy Room</span>
+                    </div>
+                    <a href="https://www.nancywitter.com" target="_blank" class="class-link">Learn More</a>
+                </div>
+            </article>
+
+            <article class="class-card">
+                <div class="class-header improv">
+                    <span class="class-type">Improv</span>
+                </div>
+                <div class="class-content">
+                    <h3>Improv Comedy 101-404</h3>
+                    <p class="class-instructor">DareDevil Improv</p>
+                    <p class="class-desc">Full curriculum from basics to advanced long-form. 101 is 6 weeks, higher levels are 8 weeks. Graduates perform at Dead Crow's Wednesday improv show.</p>
+                    <div class="class-details">
+                        <span class="class-price">~$225-$250</span>
+                    </div>
+                    <a href="https://www.daredevilimprov.com/classes" target="_blank" class="class-link">Sign Up</a>
+                </div>
+            </article>
+
+            <article class="class-card">
+                <div class="class-header sketch">
+                    <span class="class-type">Sketch</span>
+                </div>
+                <div class="class-content">
+                    <h3>Sketch Comedy Writing 101</h3>
+                    <p class="class-instructor">DareDevil Improv</p>
+                    <p class="class-desc">Learn to write comedic sketches from Groundlings/UCB trained instructors. Writing exercises and final showcase.</p>
+                    <div class="class-details">
+                        <span class="class-location">DareDevil Improv</span>
+                    </div>
+                    <a href="https://www.daredevilimprov.com/classes" target="_blank" class="class-link">Sign Up</a>
+                </div>
+            </article>
+
+            <article class="class-card">
+                <div class="class-header kids">
+                    <span class="class-type">Kids</span>
+                </div>
+                <div class="class-content">
+                    <h3>Kids Improv Workshops</h3>
+                    <p class="class-instructor">DareDevil Improv</p>
+                    <p class="class-desc">Build confidence, creativity, and communication skills through improv games and exercises designed for young performers.</p>
+                    <div class="class-details">
+                        <span class="class-location">Various Locations</span>
+                    </div>
+                    <a href="https://www.daredevilimprov.com/kidscomedy" target="_blank" class="class-link">Learn More</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Troupes & Groups -->
+    <section class="troupes-section">
+        <h2 class="section-title">Troupes & Groups</h2>
+
+        <div class="troupes-grid">
+            <article class="troupe-card">
+                <h3>DareDevil Improv</h3>
+                <p class="troupe-type">Improv & Sketch</p>
+                <p class="troupe-desc">Wilmington's premier comedy collective. Weekly shows at Dead Crow, Comedy Powder Keg showcases, and full class curriculum.</p>
+                <a href="https://www.daredevilimprov.com" target="_blank" class="troupe-link">@daredevilimprov</a>
+            </article>
+
+            <article class="troupe-card">
+                <h3>Pineapple-Shaped Lamps</h3>
+                <p class="troupe-type">Sketch & Variety</p>
+                <p class="troupe-desc">"The weirdest, nerdiest comedy troupe of all-time." Sketch shows, parodies, Rocky Horror shadow-casts since 2010.</p>
+                <a href="https://www.instagram.com/pslcomedy" target="_blank" class="troupe-link">@pslcomedy</a>
+            </article>
+
+            <article class="troupe-card">
+                <h3>Women of Wilmington</h3>
+                <p class="troupe-type">Stand-Up Collective</p>
+                <p class="troupe-desc">All-female stand-up showcase every Thursday at Laws & Libations. Produced by Chelsea Connor.</p>
+                <a href="https://www.instagram.com/womenofwilmingtoncomedy" target="_blank" class="troupe-link">@womenofwilmingtoncomedy</a>
+            </article>
+
+            <article class="troupe-card">
+                <h3>Gruff Goat Comedy</h3>
+                <p class="troupe-type">Showcase Series</p>
+                <p class="troupe-desc">Bi-monthly showcases at Waterline Brewing. Local and touring comedians. Run by Lew Morgante.</p>
+                <a href="#" class="troupe-link">Check Waterline Events</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Local Comedians -->
+    <section class="comedians-section" id="comedians">
+        <h2 class="section-title">Local Comedians</h2>
+        <p class="section-desc">The funny people who make Wilmington laugh</p>
+
+        <div class="comedians-grid">
+            <article class="comedian-card">
+                <div class="comedian-avatar" style="background: #e17055;">CC</div>
+                <h3>Cliff Cash</h3>
+                <p class="comedian-style">Touring Headliner</p>
+                <p class="comedian-bio">Wilmington native, Netflix Trial by Laughter winner. Filmed his special "The Long Road" at Thalian Hall.</p>
+            </article>
+
+            <article class="comedian-card">
+                <div class="comedian-avatar" style="background: #6c5ce7;">NW</div>
+                <h3>Nancy Witter</h3>
+                <p class="comedian-style">Touring Pro / Teacher</p>
+                <p class="comedian-bio">MAC Award winner, Nick at Nite finalist. Teaches "Look Who's Standing Up!" at Dead Crow.</p>
+            </article>
+
+            <article class="comedian-card">
+                <div class="comedian-avatar" style="background: #00b894;">WM</div>
+                <h3>Wills Maxwell Jr.</h3>
+                <p class="comedian-style">Stand-Up / Writer</p>
+                <p class="comedian-bio">Port City's Top Comic 2019. Creator of "What Did We Miss?" StandUp NBC Regional Finalist.</p>
+            </article>
+
+            <article class="comedian-card">
+                <div class="comedian-avatar" style="background: #fd79a8;">TS</div>
+                <h3>Timmy Sherrill</h3>
+                <p class="comedian-style">Scene Veteran</p>
+                <p class="comedian-bio">"The Godfather" of Wilmington comedy. Former Nutt Street owner. Charleston Comedy Festival winner.</p>
+            </article>
+
+            <article class="comedian-card">
+                <div class="comedian-avatar" style="background: #fdcb6e;">LM</div>
+                <h3>Lew Morgante</h3>
+                <p class="comedian-style">Showcase Producer</p>
+                <p class="comedian-bio">Runs Gruff Goat Comedy at Waterline. Regular host at Dead Crow. Known for crowd work.</p>
+            </article>
+
+            <article class="comedian-card">
+                <div class="comedian-avatar" style="background: #74b9ff;">KP</div>
+                <h3>Kristin Painter</h3>
+                <p class="comedian-style">Stand-Up</p>
+                <p class="comedian-bio">Women of Wilmington regular host. Rising voice in the local scene.</p>
+            </article>
+        </div>
+
+        <p class="comedians-note">Plus many more rising stars: Carson Hennessey, Colleen O'Meara, Julia Desmond, Jack Nelson, Zack Burke, and the whole open mic crew.</p>
+    </section>
+
+    <!-- Annual Events -->
+    <section class="annual-events">
+        <h2 class="section-title">Annual Events</h2>
+
+        <div class="annual-grid">
+            <article class="annual-card">
+                <div class="annual-month">MAY</div>
+                <h3>Cape Fear Comedy Festival</h3>
+                <p>Multi-day festival at Dead Crow and downtown venues. Dozens of comedians, showcases, and the Port City's Top Comic finals.</p>
+                <a href="https://www.deadcrowcomedy.com/cfcf" target="_blank">Learn More</a>
+            </article>
+
+            <article class="annual-card">
+                <div class="annual-month">SUMMER</div>
+                <h3>Port City's Top Comic</h3>
+                <p>Annual stand-up competition. Local and regional comics compete through preliminary rounds for the title.</p>
+                <a href="https://www.deadcrowcomedy.com" target="_blank">Dead Crow Updates</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Submit Event Section -->
+    <section class="submit-section" id="submit">
+        <div class="submit-container">
+            <h2 class="section-title">Submit an Event</h2>
+            <p class="section-desc">Know about a comedy show, open mic, or class we're missing? Let us know!</p>
+
+            <form class="submit-form" id="event-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="event-name">Event Name *</label>
+                        <input type="text" id="event-name" name="eventName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-type">Event Type *</label>
+                        <select id="event-type" name="eventType" required>
+                            <option value="">Select type...</option>
+                            <option value="standup">Stand-Up Show</option>
+                            <option value="improv">Improv Show</option>
+                            <option value="openmic">Open Mic</option>
+                            <option value="workshop">Workshop/Class</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="event-date">Date *</label>
+                        <input type="date" id="event-date" name="eventDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-time">Time *</label>
+                        <input type="time" id="event-time" name="eventTime" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="event-venue">Venue *</label>
+                    <input type="text" id="event-venue" name="eventVenue" required placeholder="Venue name and address">
+                </div>
+
+                <div class="form-group">
+                    <label for="event-description">Description</label>
+                    <textarea id="event-description" name="eventDescription" rows="3" placeholder="Tell us about the event..."></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="event-price">Price</label>
+                        <input type="text" id="event-price" name="eventPrice" placeholder="Free, $10, etc.">
+                    </div>
+                    <div class="form-group">
+                        <label for="event-link">Event Link</label>
+                        <input type="url" id="event-link" name="eventLink" placeholder="https://...">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="submitter-email">Your Email (optional)</label>
+                    <input type="email" id="submitter-email" name="submitterEmail" placeholder="In case we need to follow up">
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Event</button>
+            </form>
+
+            <div class="submit-success" id="submit-success" style="display: none;">
+                <span class="success-icon">✓</span>
+                <h3>Thanks for the submission!</h3>
+                <p>We'll review and add it to the calendar.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources -->
+    <section class="resources-section">
+        <h2 class="section-title">Quick Links</h2>
+
+        <div class="resources-grid">
+            <a href="https://www.deadcrowcomedy.com" target="_blank" class="resource-link">
+                <span class="resource-name">Dead Crow Calendar</span>
+                <span class="resource-arrow">→</span>
+            </a>
+            <a href="https://www.daredevilimprov.com" target="_blank" class="resource-link">
+                <span class="resource-name">DareDevil Improv</span>
+                <span class="resource-arrow">→</span>
+            </a>
+            <a href="https://www.instagram.com/womenofwilmingtoncomedy" target="_blank" class="resource-link">
+                <span class="resource-name">Women of Wilmington</span>
+                <span class="resource-arrow">→</span>
+            </a>
+            <a href="https://barzarre.com" target="_blank" class="resource-link">
+                <span class="resource-name">Barzarre Events</span>
+                <span class="resource-arrow">→</span>
+            </a>
+            <a href="https://www.eventbrite.com/d/nc--wilmington/comedy/" target="_blank" class="resource-link">
+                <span class="resource-name">Eventbrite Wilmington Comedy</span>
+                <span class="resource-arrow">→</span>
+            </a>
+            <a href="https://www.cfcc.edu/wilsoncenter/" target="_blank" class="resource-link">
+                <span class="resource-name">Wilson Center Shows</span>
+                <span class="resource-arrow">→</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">WILMINGTON LAUGHS</span>
+                <p>Your community guide to comedy in the Port City</p>
+            </div>
+            <div class="footer-links">
+                <a href="#shows">Shows</a>
+                <a href="#open-mics">Open Mics</a>
+                <a href="#classes">Classes</a>
+                <a href="#venues">Venues</a>
+                <a href="#submit">Submit Event</a>
+            </div>
+            <div class="footer-social">
+                <p>Follow the scene:</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/deadcrowcomedy" target="_blank">@deadcrowcomedy</a>
+                    <a href="https://www.instagram.com/daredevilimprov" target="_blank">@daredevilimprov</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Made with laughs in Wilmington, NC</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

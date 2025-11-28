@@ -1,0 +1,11 @@
+{
+  "name": "wilmington-laughs",
+  "version": "1.0.0",
+  "description": "Wilmington NC Comedy Event Aggregator",
+  "scripts": {
+    "scrape": "node scripts/scrape-events.js"
+  },
+  "keywords": ["comedy", "wilmington", "events"],
+  "author": "",
+  "license": "MIT"
+}
