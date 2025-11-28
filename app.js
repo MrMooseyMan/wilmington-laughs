@@ -2,7 +2,7 @@
    WILMINGTON LAUGHS - JavaScript
    Event data, filtering, form handling
 
-   LAST UPDATED: 2025-11-28T06:15:03.916Z
+   LAST UPDATED: 2025-11-28T06:40:10.463Z
    Events are automatically scraped weekly via Perplexity API
    ============================================ */
 
@@ -14,28 +14,15 @@ const scrapedEvents = [
     {
         "name": "Chloe Radcliffe",
         "type": "standup",
-        "date": "2025-11-28",
-        "time": "7:00 PM",
+        "date": "2025-11-29",
+        "time": "8:00 PM",
         "venue": "Dead Crow Comedy Room",
         "address": "511 N. 3rd Street",
-        "price": "Check ticket site",
-        "description": "Chloe Radcliffe stand-up comedy show.",
+        "price": "$10",
+        "description": "Chloe Radcliffe performs stand-up comedy at Dead Crow Comedy Room.",
         "link": "https://deadcrowcomedy-com.seatengine.com",
         "recurring": false,
         "id": 1
-    },
-    {
-        "name": "Chloe Radcliffe",
-        "type": "standup",
-        "date": "2025-11-29",
-        "time": "7:00 PM",
-        "venue": "Dead Crow Comedy Room",
-        "address": "511 N. 3rd Street",
-        "price": "Check ticket site",
-        "description": "Chloe Radcliffe stand-up comedy show.",
-        "link": "https://deadcrowcomedy-com.seatengine.com",
-        "recurring": false,
-        "id": 2
     },
     {
         "name": "Dead Crow Improv Night",
@@ -45,75 +32,62 @@ const scrapedEvents = [
         "venue": "Dead Crow Comedy Room",
         "address": "511 N. 3rd Street",
         "price": "FREE",
-        "description": "Spontaneous comedy made up right before your eyes, based on audience suggestions.",
+        "description": "Weekly improv comedy show. No reservations, first come, first served.",
+        "link": "https://deadcrowcomedy-com.seatengine.com",
+        "recurring": true,
+        "id": 2
+    },
+    {
+        "name": "Meeser Eddie's Funtime Trivia",
+        "type": "special",
+        "date": "2025-12-03",
+        "time": "7:00 PM",
+        "venue": "Dead Crow Comedy Room",
+        "address": "511 N. 3rd Street",
+        "price": "FREE",
+        "description": "Weekly themed trivia night with physical challenges and prizes.",
         "link": "https://deadcrowcomedy-com.seatengine.com",
         "recurring": true,
         "id": 3
     },
     {
-        "name": "Open Mic Comedy",
-        "type": "openmic",
-        "date": "2025-12-04",
-        "time": "8:00 PM",
+        "name": "Langston Kerman",
+        "type": "standup",
+        "date": "2025-12-05",
+        "time": "7:00 PM",
         "venue": "Dead Crow Comedy Room",
         "address": "511 N. 3rd Street",
-        "price": "FREE",
-        "description": "Open mic for aspiring comics, both seasoned and new. Sign up at 7 PM, showtime 8 PM.",
-        "link": "https://deadcrowcomedy-com.seatengine.com",
-        "recurring": true,
+        "price": "$105",
+        "description": "Langston Kerman performs stand-up comedy at Dead Crow Comedy Room.",
+        "link": "https://seatgeek.com/venues/dead-crow-comedy-room/tickets",
+        "recurring": false,
         "id": 4
     },
     {
         "name": "Langston Kerman",
         "type": "standup",
         "date": "2025-12-05",
-        "time": "7:00 PM",
+        "time": "9:30 PM",
         "venue": "Dead Crow Comedy Room",
         "address": "511 N. 3rd Street",
         "price": "$105",
-        "description": "Langston Kerman stand-up comedy show.",
-        "link": "https://deadcrowcomedy-com.seatengine.com",
+        "description": "Langston Kerman performs stand-up comedy at Dead Crow Comedy Room.",
+        "link": "https://seatgeek.com/venues/dead-crow-comedy-room/tickets",
         "recurring": false,
         "id": 5
     },
     {
         "name": "Langston Kerman",
         "type": "standup",
-        "date": "2025-12-05",
+        "date": "2025-12-06",
         "time": "9:30 PM",
         "venue": "Dead Crow Comedy Room",
         "address": "511 N. 3rd Street",
         "price": "$105",
-        "description": "Langston Kerman stand-up comedy show.",
-        "link": "https://deadcrowcomedy-com.seatengine.com",
+        "description": "Langston Kerman performs stand-up comedy at Dead Crow Comedy Room.",
+        "link": "https://seatgeek.com/venues/dead-crow-comedy-room/tickets",
         "recurring": false,
         "id": 6
-    },
-    {
-        "name": "Langston Kerman",
-        "type": "standup",
-        "date": "2025-12-06",
-        "time": "7:00 PM",
-        "venue": "Dead Crow Comedy Room",
-        "address": "511 N. 3rd Street",
-        "price": "$105",
-        "description": "Langston Kerman stand-up comedy show.",
-        "link": "https://deadcrowcomedy-com.seatengine.com",
-        "recurring": false,
-        "id": 7
-    },
-    {
-        "name": "Langston Kerman",
-        "type": "standup",
-        "date": "2025-12-06",
-        "time": "9:30 PM",
-        "venue": "Dead Crow Comedy Room",
-        "address": "511 N. 3rd Street",
-        "price": "$105",
-        "description": "Langston Kerman stand-up comedy show.",
-        "link": "https://deadcrowcomedy-com.seatengine.com",
-        "recurring": false,
-        "id": 8
     },
     {
         "name": "Dead Crow Improv Night",
@@ -123,23 +97,23 @@ const scrapedEvents = [
         "venue": "Dead Crow Comedy Room",
         "address": "511 N. 3rd Street",
         "price": "FREE",
-        "description": "Spontaneous comedy made up right before your eyes, based on audience suggestions.",
+        "description": "Weekly improv comedy show. No reservations, first come, first served.",
         "link": "https://deadcrowcomedy-com.seatengine.com",
         "recurring": true,
-        "id": 9
+        "id": 7
     },
     {
-        "name": "Open Mic Comedy",
-        "type": "openmic",
-        "date": "2025-12-11",
-        "time": "8:00 PM",
+        "name": "Meeser Eddie's Funtime Trivia",
+        "type": "special",
+        "date": "2025-12-10",
+        "time": "7:00 PM",
         "venue": "Dead Crow Comedy Room",
         "address": "511 N. 3rd Street",
         "price": "FREE",
-        "description": "Open mic for aspiring comics, both seasoned and new. Sign up at 7 PM, showtime 8 PM.",
+        "description": "Weekly themed trivia night with physical challenges and prizes.",
         "link": "https://deadcrowcomedy-com.seatengine.com",
         "recurring": true,
-        "id": 10
+        "id": 8
     },
     {
         "name": "Rosebud Baker",
@@ -149,49 +123,49 @@ const scrapedEvents = [
         "venue": "Dead Crow Comedy Room",
         "address": "511 N. 3rd Street",
         "price": "$112",
-        "description": "Rosebud Baker stand-up comedy show.",
-        "link": "https://deadcrowcomedy-com.seatengine.com",
+        "description": "Rosebud Baker performs stand-up comedy at Dead Crow Comedy Room.",
+        "link": "https://seatgeek.com/venues/dead-crow-comedy-room/tickets",
+        "recurring": false,
+        "id": 9
+    },
+    {
+        "name": "Rosebud Baker",
+        "type": "standup",
+        "date": "2025-12-12",
+        "time": "9:30 PM",
+        "venue": "Dead Crow Comedy Room",
+        "address": "511 N. 3rd Street",
+        "price": "$112",
+        "description": "Rosebud Baker performs stand-up comedy at Dead Crow Comedy Room.",
+        "link": "https://seatgeek.com/venues/dead-crow-comedy-room/tickets",
+        "recurring": false,
+        "id": 10
+    },
+    {
+        "name": "Rosebud Baker",
+        "type": "standup",
+        "date": "2025-12-13",
+        "time": "7:00 PM",
+        "venue": "Dead Crow Comedy Room",
+        "address": "511 N. 3rd Street",
+        "price": "$108",
+        "description": "Rosebud Baker performs stand-up comedy at Dead Crow Comedy Room.",
+        "link": "https://www.vividseats.com/rosebud-baker-tickets-wilmington-dead-crow-comedy-room-12-13-2025--theater-comedy/production/5939503",
         "recurring": false,
         "id": 11
     },
     {
         "name": "Rosebud Baker",
         "type": "standup",
-        "date": "2025-12-12",
+        "date": "2025-12-13",
         "time": "9:30 PM",
         "venue": "Dead Crow Comedy Room",
         "address": "511 N. 3rd Street",
-        "price": "$112",
-        "description": "Rosebud Baker stand-up comedy show.",
-        "link": "https://deadcrowcomedy-com.seatengine.com",
+        "price": "$108",
+        "description": "Rosebud Baker performs stand-up comedy at Dead Crow Comedy Room.",
+        "link": "https://www.vividseats.com/rosebud-baker-tickets-wilmington-dead-crow-comedy-room-12-13-2025--theater-comedy/production/5939503",
         "recurring": false,
         "id": 12
-    },
-    {
-        "name": "Rosebud Baker",
-        "type": "standup",
-        "date": "2025-12-13",
-        "time": "7:00 PM",
-        "venue": "Dead Crow Comedy Room",
-        "address": "511 N. 3rd Street",
-        "price": "$64",
-        "description": "Rosebud Baker stand-up comedy show.",
-        "link": "https://www.vividseats.com/rosebud-baker-tickets-wilmington-dead-crow-comedy-room-12-13-2025--theater-comedy/production/5939503",
-        "recurring": false,
-        "id": 13
-    },
-    {
-        "name": "Rosebud Baker",
-        "type": "standup",
-        "date": "2025-12-13",
-        "time": "9:30 PM",
-        "venue": "Dead Crow Comedy Room",
-        "address": "511 N. 3rd Street",
-        "price": "$64",
-        "description": "Rosebud Baker stand-up comedy show.",
-        "link": "https://www.vividseats.com/rosebud-baker-tickets-wilmington-dead-crow-comedy-room-12-13-2025--theater-comedy/production/5939503",
-        "recurring": false,
-        "id": 14
     },
     {
         "name": "Dead Crow Improv Night",
@@ -201,22 +175,48 @@ const scrapedEvents = [
         "venue": "Dead Crow Comedy Room",
         "address": "511 N. 3rd Street",
         "price": "FREE",
-        "description": "Spontaneous comedy made up right before your eyes, based on audience suggestions.",
+        "description": "Weekly improv comedy show. No reservations, first come, first served.",
         "link": "https://deadcrowcomedy-com.seatengine.com",
         "recurring": true,
-        "id": 15
+        "id": 13
     },
     {
-        "name": "Open Mic Comedy",
-        "type": "openmic",
-        "date": "2025-12-18",
-        "time": "8:00 PM",
+        "name": "Meeser Eddie's Funtime Trivia",
+        "type": "special",
+        "date": "2025-12-17",
+        "time": "7:00 PM",
         "venue": "Dead Crow Comedy Room",
         "address": "511 N. 3rd Street",
         "price": "FREE",
-        "description": "Open mic for aspiring comics, both seasoned and new. Sign up at 7 PM, showtime 8 PM.",
+        "description": "Weekly themed trivia night with physical challenges and prizes.",
         "link": "https://deadcrowcomedy-com.seatengine.com",
         "recurring": true,
+        "id": 14
+    },
+    {
+        "name": "Aaron Berg",
+        "type": "standup",
+        "date": "2025-12-20",
+        "time": "7:00 PM",
+        "venue": "Dead Crow Comedy Room",
+        "address": "511 N. 3rd Street",
+        "price": "$112",
+        "description": "Aaron Berg performs stand-up comedy at Dead Crow Comedy Room.",
+        "link": "https://www.wilmingtonnctheater.com/shows/dead-crow-comedy-room/aaron-berg-18-event/tickets/seating?performance_id=6178588&performance_time=2025-12-20T19%3A00%3A00+00%3A00",
+        "recurring": false,
+        "id": 15
+    },
+    {
+        "name": "Sam Jay",
+        "type": "standup",
+        "date": "2025-12-20",
+        "time": "9:30 PM",
+        "venue": "Dead Crow Comedy Room",
+        "address": "511 N. 3rd Street",
+        "price": "$112",
+        "description": "Sam Jay performs stand-up comedy at Dead Crow Comedy Room.",
+        "link": "https://deadcrowcomedy-com.seatengine.com",
+        "recurring": false,
         "id": 16
     }
 ];
@@ -393,39 +393,37 @@ function initForm() {
 
     if (!form) return;
 
-    form.addEventListener('submit', async (e) => {
+    form.addEventListener('submit', (e) => {
         e.preventDefault();
 
         const formData = new FormData(form);
+        const submission = {
+            name: formData.get('eventName'),
+            type: formData.get('eventType'),
+            date: formData.get('eventDate'),
+            time: formData.get('eventTime'),
+            venue: formData.get('eventVenue'),
+            description: formData.get('eventDescription'),
+            price: formData.get('eventPrice') || 'TBD',
+            link: formData.get('eventLink'),
+            email: formData.get('submitterEmail')
+        };
 
-        try {
-            // Submit to Netlify Forms
-            const response = await fetch('/', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: new URLSearchParams(formData).toString()
-            });
+        // Save submission locally
+        saveSubmission(submission);
 
-            if (response.ok) {
-                // Show success message
-                form.style.display = 'none';
-                successMessage.style.display = 'block';
+        // Show success message
+        form.style.display = 'none';
+        successMessage.style.display = 'block';
 
-                // Reset after 3 seconds
-                setTimeout(() => {
-                    form.reset();
-                    form.style.display = 'block';
-                    successMessage.style.display = 'none';
-                }, 3000);
+        // Reset after 3 seconds
+        setTimeout(() => {
+            form.reset();
+            form.style.display = 'block';
+            successMessage.style.display = 'none';
+        }, 3000);
 
-                console.log('Event submitted successfully');
-            } else {
-                throw new Error('Form submission failed');
-            }
-        } catch (error) {
-            console.error('Error submitting form:', error);
-            alert('There was an error submitting your event. Please try again.');
-        }
+        console.log('Event submitted:', submission);
     });
 }
 
@@ -615,5 +613,5 @@ window.WilmingtonLaughs = {
     loadSubmissions,
     clearSubmissions: () => localStorage.removeItem(SUBMISSIONS_KEY),
     clearEvents: () => localStorage.removeItem(STORAGE_KEY),
-    lastUpdated: '2025-11-28T06:15:03.916Z'
+    lastUpdated: '2025-11-28T06:40:10.463Z'
 };
