@@ -304,37 +304,39 @@ function initForm() {
 
     if (!form) return;
 
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
         e.preventDefault();
 
         const formData = new FormData(form);
-        const submission = {
-            name: formData.get('eventName'),
-            type: formData.get('eventType'),
-            date: formData.get('eventDate'),
-            time: formData.get('eventTime'),
-            venue: formData.get('eventVenue'),
-            description: formData.get('eventDescription'),
-            price: formData.get('eventPrice') || 'TBD',
-            link: formData.get('eventLink'),
-            email: formData.get('submitterEmail')
-        };
 
-        // Save submission locally
-        saveSubmission(submission);
+        try {
+            // Submit to Netlify Forms
+            const response = await fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(formData).toString()
+            });
 
-        // Show success message
-        form.style.display = 'none';
-        successMessage.style.display = 'block';
+            if (response.ok) {
+                // Show success message
+                form.style.display = 'none';
+                successMessage.style.display = 'block';
 
-        // Reset after 3 seconds
-        setTimeout(() => {
-            form.reset();
-            form.style.display = 'block';
-            successMessage.style.display = 'none';
-        }, 3000);
+                // Reset after 3 seconds
+                setTimeout(() => {
+                    form.reset();
+                    form.style.display = 'block';
+                    successMessage.style.display = 'none';
+                }, 3000);
 
-        console.log('Event submitted:', submission);
+                console.log('Event submitted successfully');
+            } else {
+                throw new Error('Form submission failed');
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            alert('There was an error submitting your event. Please try again.');
+        }
     });
 }
 
