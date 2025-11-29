@@ -1,0 +1,74 @@
+{
+  "pages": [
+    {
+      "slug": "comedy-events-wilmington",
+      "title": "Comedy Events in Wilmington NC",
+      "h1": "Comedy Events in Wilmington, NC",
+      "subtitle": "Your complete guide to stand-up shows, improv nights, and comedy events in the Port City",
+      "metaDescription": "Find the best comedy events in Wilmington, NC. Weekly shows at Dead Crow Comedy Room, touring comedians, improv nights, and local showcases. Updated weekly.",
+      "keywords": "comedy events Wilmington NC, Wilmington comedy shows, stand-up comedy Wilmington, comedy night Wilmington, things to do Wilmington NC",
+      "content": "<h2>Wilmington's Thriving Comedy Scene</h2><p>Wilmington, North Carolina has become a hotspot for live comedy on the East Coast. Whether you're looking for nationally touring headliners, local stand-up showcases, or spontaneous improv performances, the Port City delivers laughs every night of the week.</p><h2>Where to Find Comedy Events</h2><h3>Dead Crow Comedy Room</h3><p>Wilmington's only dedicated comedy club hosts shows Thursday through Saturday, featuring touring comedians and local talent. Located at 511 N. 3rd Street in downtown Wilmington, Dead Crow is the heart of the local comedy scene.</p><div class='info-card'><h4>Dead Crow Comedy Room</h4><p class='venue-address'>511 N. 3rd Street, Wilmington NC</p><a href='https://www.deadcrowcomedy.com' class='venue-link'>View Schedule</a></div><h3>Weekly Comedy Schedule</h3><table class='schedule-table'><thead><tr><th>Day</th><th>Event</th><th>Venue</th><th>Time</th></tr></thead><tbody><tr><td>Monday</td><td>Open Mic</td><td>Barzarre</td><td>6:30 PM</td></tr><tr><td>Tuesday</td><td>Comedy Open Mic</td><td>Port City Cheesesteak</td><td>8:00 PM</td></tr><tr><td>Wednesday</td><td>Improv Night</td><td>Dead Crow</td><td>8:30 PM</td></tr><tr><td>Thursday</td><td>Open Mic + Headliner</td><td>Dead Crow</td><td>8:30 PM</td></tr><tr><td>Fri-Sat</td><td>Weekend Headliner</td><td>Dead Crow</td><td>Multiple Shows</td></tr></tbody></table><h2>Upcoming Events</h2><p>Check the main Wilmington Laughs calendar for this week's shows, including ticket links and pricing information.</p>",
+      "relatedLinks": [
+        {"url": "/open-mic-wilmington", "title": "Open Mic Nights", "desc": "Find your stage time"},
+        {"url": "/improv-classes-wilmington", "title": "Improv Classes", "desc": "Learn comedy in Wilmington"},
+        {"url": "/comedy-venues-wilmington", "title": "Comedy Venues", "desc": "Where to see shows"}
+      ]
+    },
+    {
+      "slug": "open-mic-wilmington",
+      "title": "Open Mic Comedy in Wilmington NC",
+      "h1": "Open Mic Comedy Nights in Wilmington",
+      "subtitle": "Free stage time for comedians every night of the week",
+      "metaDescription": "Complete guide to comedy open mics in Wilmington, NC. Free open mics Monday through Thursday at Dead Crow, Barzarre, Laws & Libations, and more venues.",
+      "keywords": "open mic Wilmington NC, comedy open mic, stand-up open mic Wilmington, free comedy Wilmington, Dead Crow open mic",
+      "content": "<h2>Open Mic Comedy in Wilmington</h2><p>Wilmington has one of the most active open mic scenes on the East Coast. With free open mics available almost every night of the week, aspiring comedians can find plenty of stage time to develop their material.</p><h2>Weekly Open Mic Schedule</h2><table class='schedule-table'><thead><tr><th>Day</th><th>Venue</th><th>Time</th><th>Sign-up</th></tr></thead><tbody><tr><td>Monday</td><td>Barzarre (Castle St)</td><td>6:30 PM</td><td>First come, first served</td></tr><tr><td>Tuesday</td><td>Port City Cheesesteak</td><td>8:00 PM</td><td>Sign up at venue</td></tr><tr><td>Wednesday</td><td>Laws & Libations</td><td>7:00 PM</td><td>Sign up at venue</td></tr><tr><td>Thursday</td><td>Dead Crow Comedy Room</td><td>8:30 PM</td><td>Sign-up starts 7 PM</td></tr><tr><td>Thursday</td><td>Laws & Libations (Women of Wilmington)</td><td>8:00 PM</td><td>Contact organizers</td></tr></tbody></table><h2>Tips for Your First Open Mic</h2><ul><li><strong>Arrive early</strong> - Sign-up spots fill quickly, especially at Dead Crow</li><li><strong>Prepare 3-5 minutes of material</strong> - Most mics give new comics 3-5 minutes</li><li><strong>Bring a notebook</strong> - Write down what works and what doesn't</li><li><strong>Be supportive</strong> - Stay and watch other performers</li><li><strong>Have fun</strong> - Everyone bombs sometimes. It's part of learning!</li></ul><h2>The Best Open Mic for Beginners</h2><p>If it's your first time, we recommend starting at <strong>Barzarre's Monday Open Mic</strong>. It's a supportive, low-pressure environment perfect for trying out new material. For a more club-like experience, Dead Crow's Thursday open mic is the place to be.</p>",
+      "relatedLinks": [
+        {"url": "/comedy-events-wilmington", "title": "Comedy Events", "desc": "All shows this week"},
+        {"url": "/standup-classes-wilmington", "title": "Stand-Up Classes", "desc": "Learn from the pros"},
+        {"url": "/comedy-venues-wilmington", "title": "Comedy Venues", "desc": "Where to perform"}
+      ]
+    },
+    {
+      "slug": "improv-classes-wilmington",
+      "title": "Improv Classes in Wilmington NC",
+      "h1": "Improv Comedy Classes in Wilmington",
+      "subtitle": "Learn improv from Wilmington's top comedy instructors",
+      "metaDescription": "Take improv classes in Wilmington, NC with DareDevil Improv. Beginner to advanced levels, kids classes, and sketch writing. Graduate to perform at Dead Crow Comedy Room.",
+      "keywords": "improv classes Wilmington NC, improv comedy Wilmington, DareDevil Improv, learn improv Wilmington, comedy classes Wilmington",
+      "content": "<h2>Learn Improv in Wilmington</h2><p>Whether you want to perform on stage, improve your public speaking, or just have fun, Wilmington's improv classes offer something for everyone. DareDevil Improv runs the most comprehensive curriculum in the area.</p><h2>DareDevil Improv Classes</h2><h3>Improv 101 - Foundations</h3><p>Perfect for beginners! Learn the fundamentals of \"yes, and,\" listening, and scene work. This 6-week course covers everything you need to start your improv journey.</p><ul><li><strong>Duration:</strong> 6 weeks</li><li><strong>Price:</strong> ~$225</li><li><strong>No experience required</strong></li></ul><h3>Improv 201-404 - Advanced Levels</h3><p>Continue your training through advanced scene work, long-form improv, and performance techniques. Each level builds on the previous, culminating in performances at Dead Crow Comedy Room.</p><div class='info-card'><h4>DareDevil Improv</h4><p class='venue-address'>Classes held at various Wilmington locations</p><a href='https://www.daredevilimprov.com/classes' class='venue-link'>View Class Schedule</a></div><h2>Why Take Improv Classes?</h2><ul><li><strong>Build confidence</strong> - Get comfortable speaking in front of groups</li><li><strong>Improve listening skills</strong> - Learn to be present and react in the moment</li><li><strong>Make friends</strong> - Join Wilmington's creative comedy community</li><li><strong>Have fun!</strong> - Improv is a blast, even for non-performers</li></ul><h2>Kids Improv Workshops</h2><p>DareDevil also offers workshops for young performers! Build creativity, confidence, and communication skills through games and exercises designed for children.</p>",
+      "relatedLinks": [
+        {"url": "/standup-classes-wilmington", "title": "Stand-Up Classes", "desc": "Learn stand-up comedy"},
+        {"url": "/open-mic-wilmington", "title": "Open Mics", "desc": "Practice your skills"},
+        {"url": "/comedy-events-wilmington", "title": "Comedy Events", "desc": "See shows in Wilmington"}
+      ]
+    },
+    {
+      "slug": "standup-classes-wilmington",
+      "title": "Stand-Up Comedy Classes in Wilmington NC",
+      "h1": "Stand-Up Comedy Classes in Wilmington",
+      "subtitle": "Learn to write and perform stand-up with award-winning instructors",
+      "metaDescription": "Take stand-up comedy classes in Wilmington, NC. Learn from Nancy Witter's 'Look Who's Standing Up!' course at Dead Crow Comedy Room. Write, perform, and graduate with a showcase.",
+      "keywords": "stand-up comedy classes Wilmington NC, learn stand-up Wilmington, Nancy Witter comedy class, Dead Crow comedy classes, comedy writing Wilmington",
+      "content": "<h2>Learn Stand-Up Comedy in Wilmington</h2><p>Ready to try stand-up? Wilmington offers hands-on classes where you'll learn joke writing, stage presence, and timing from experienced comedians who've performed across the country.</p><h2>Look Who's Standing Up!</h2><p>Taught by award-winning comedian <strong>Nancy Witter</strong>, this multi-week course at Dead Crow Comedy Room takes you from concept to stage. You'll learn:</p><ul><li>How to find your comedic voice</li><li>Joke structure and writing techniques</li><li>Stage presence and microphone skills</li><li>Timing, callbacks, and crowd work basics</li></ul><p>The course culminates in a <strong>graduation showcase</strong> where you'll perform your material for a live audience!</p><div class='info-card'><h4>About Nancy Witter</h4><p>MAC Award winner and Nick at Nite Stand-Up Showdown finalist. Nancy has been teaching comedy in Wilmington for years, helping dozens of students find their voice on stage.</p><a href='https://www.nancywitter.com' class='venue-link'>Learn More</a></div><h2>What to Expect</h2><ol><li><strong>Week 1-2:</strong> Finding material and writing your first jokes</li><li><strong>Week 3-4:</strong> Refining material and learning stage craft</li><li><strong>Week 5-6:</strong> Practice performances and feedback</li><li><strong>Graduation:</strong> Perform your set at Dead Crow!</li></ol><h2>After the Class</h2><p>Once you've graduated, Wilmington has plenty of open mics to keep practicing. Many class alumni become regulars at Dead Crow's Thursday open mic and eventually start booking paid gigs around town.</p>",
+      "relatedLinks": [
+        {"url": "/improv-classes-wilmington", "title": "Improv Classes", "desc": "Try improv comedy"},
+        {"url": "/open-mic-wilmington", "title": "Open Mics", "desc": "Practice after class"},
+        {"url": "/comedy-events-wilmington", "title": "Comedy Events", "desc": "See the pros perform"}
+      ]
+    },
+    {
+      "slug": "comedy-venues-wilmington",
+      "title": "Comedy Venues in Wilmington NC",
+      "h1": "Comedy Venues in Wilmington, NC",
+      "subtitle": "Where to see live comedy in the Port City",
+      "metaDescription": "Guide to comedy venues in Wilmington, NC. Dead Crow Comedy Room, Laws & Libations, Barzarre, Waterline Brewing, and more places to catch live stand-up and improv.",
+      "keywords": "comedy venues Wilmington NC, Dead Crow Comedy Room, Wilmington comedy clubs, where to see comedy Wilmington, live comedy Wilmington",
+      "content": "<h2>Wilmington's Comedy Venues</h2><p>From dedicated comedy clubs to bars hosting weekly open mics, Wilmington has plenty of places to catch live laughs. Here's your guide to every venue in the Port City comedy scene.</p><h2>Dead Crow Comedy Room</h2><p>Wilmington's only full-time comedy club, Dead Crow is the heart of the local scene. National touring headliners perform Thursday through Saturday, with improv and open mics earlier in the week.</p><div class='info-card'><h4>Dead Crow Comedy Room</h4><p class='venue-address'>511 N. 3rd Street, Downtown Wilmington</p><p>Shows: Wed-Sat | Tickets: $10-$30+</p><a href='https://www.deadcrowcomedy.com' class='venue-link'>Get Tickets</a></div><h2>Laws & Libations</h2><p>This downtown bar hosts two weekly comedy events: Wednesday open mics and the Thursday <strong>Women of Wilmington</strong> showcase, featuring all-female stand-up performers.</p><div class='info-card'><h4>Laws & Libations</h4><p class='venue-address'>108 Grace Street, Downtown</p><p>Shows: Wed & Thu | FREE</p></div><h2>Barzarre</h2><p>Formerly the Juggling Gypsy, this \"unusual bar\" on Castle Street hosts the longest-running Monday open mic in Wilmington. A laid-back atmosphere perfect for trying new material.</p><div class='info-card'><h4>Barzarre</h4><p class='venue-address'>1610 Castle Street</p><p>Open Mic: Mondays 6:30 PM | FREE</p><a href='https://barzarre.com' class='venue-link'>Website</a></div><h2>Other Venues</h2><ul><li><strong>Waterline Brewing</strong> - Home of Gruff Goat Comedy showcases</li><li><strong>Port City Cheesesteak Co.</strong> - Tuesday night open mics downtown</li><li><strong>Wilson Center</strong> - Major touring acts (Leanne Morgan, etc.)</li></ul>",
+      "relatedLinks": [
+        {"url": "/comedy-events-wilmington", "title": "Comedy Events", "desc": "What's happening this week"},
+        {"url": "/open-mic-wilmington", "title": "Open Mics", "desc": "Find stage time"},
+        {"url": "/improv-classes-wilmington", "title": "Take Classes", "desc": "Learn comedy yourself"}
+      ]
+    }
+  ]
+}
