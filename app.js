@@ -2,7 +2,7 @@
    WILMINGTON LAUGHS - JavaScript
    Event data, filtering, form handling
 
-   LAST UPDATED: 2025-12-08T11:14:49.270Z
+   LAST UPDATED: 2025-12-15T11:14:39.409Z
    Events are automatically scraped weekly via Perplexity API
    ============================================ */
 
@@ -12,160 +12,95 @@
 
 const scrapedEvents = [
     {
-        "name": "Alonzo Bodden",
-        "type": "standup",
-        "date": "2025-12-10",
+        "name": "Meeser Eddie's Funtime Trivia",
+        "type": "special",
+        "date": "2025-12-17",
         "time": "7:00 PM",
-        "venue": "Dead Crow Comedy Room",
-        "address": "511 N 3rd Street",
-        "price": "$112",
-        "description": "Standup comedy show featuring Alonzo Bodden.",
-        "link": "https://deadcrowcomedy-com.seatengine.com/event/alonzo-bodden-2025-12-10",
-        "recurring": false,
-        "id": 1
-    },
-    {
-        "name": "Alonzo Bodden",
-        "type": "standup",
-        "date": "2025-12-10",
-        "time": "9:30 PM",
-        "venue": "Dead Crow Comedy Room",
-        "address": "511 N 3rd Street",
-        "price": "$112",
-        "description": "Standup comedy show featuring Alonzo Bodden.",
-        "link": "https://deadcrowcomedy-com.seatengine.com/event/alonzo-bodden-2025-12-10",
-        "recurring": false,
-        "id": 2
-    },
-    {
-        "name": "Alonzo Bodden",
-        "type": "standup",
-        "date": "2025-12-11",
-        "time": "7:00 PM",
-        "venue": "Dead Crow Comedy Room",
-        "address": "511 N 3rd Street",
-        "price": "$112",
-        "description": "Standup comedy show featuring Alonzo Bodden.",
-        "link": "https://deadcrowcomedy-com.seatengine.com/event/alonzo-bodden-2025-12-11",
-        "recurring": false,
-        "id": 3
-    },
-    {
-        "name": "Rosebud Baker",
-        "type": "standup",
-        "date": "2025-12-12",
-        "time": "7:00 PM",
-        "venue": "Dead Crow Comedy Room",
-        "address": "511 N 3rd Street",
-        "price": "$112",
-        "description": "Standup comedy show featuring Rosebud Baker.",
-        "link": "https://deadcrowcomedy-com.seatengine.com/event/rosebud-baker-2025-12-12",
-        "recurring": false,
-        "id": 4
-    },
-    {
-        "name": "Rosebud Baker",
-        "type": "standup",
-        "date": "2025-12-12",
-        "time": "9:30 PM",
-        "venue": "Dead Crow Comedy Room",
-        "address": "511 N 3rd Street",
-        "price": "$112",
-        "description": "Standup comedy show featuring Rosebud Baker.",
-        "link": "https://deadcrowcomedy-com.seatengine.com/event/rosebud-baker-2025-12-12",
-        "recurring": false,
-        "id": 5
-    },
-    {
-        "name": "Rosebud Baker",
-        "type": "standup",
-        "date": "2025-12-13",
-        "time": "7:00 PM",
-        "venue": "Dead Crow Comedy Room",
-        "address": "511 N 3rd Street",
-        "price": "$112",
-        "description": "Standup comedy show featuring Rosebud Baker.",
-        "link": "https://deadcrowcomedy-com.seatengine.com/event/rosebud-baker-2025-12-13",
-        "recurring": false,
-        "id": 6
-    },
-    {
-        "name": "Dead Crow Comedy Room Open Mic",
-        "type": "openmic",
-        "date": "2025-12-11",
-        "time": "8:00 PM",
         "venue": "Dead Crow Comedy Room",
         "address": "511 N 3rd Street",
         "price": "FREE",
-        "description": "Weekly open mic comedy night for aspiring comics. Doors open at 6:30 PM, sign up at 7 PM, show starts at 8 PM. First come, first served seating.",
+        "description": "Catch trivia every Wednesday with Meeser Eddie and friends! The fun kicks off in the Dead Crow showroom at 7PM every Wednesday for a knee-slappin' good time -- themed trivia and physical challenges. It's FREE to play, and you can win show tickets and other prizes.",
         "link": "https://deadcrowcomedy-com.seatengine.com",
         "recurring": true,
-        "id": 7
+        "id": 1
     },
     {
-        "name": "Dead Crow Improv Night",
+        "name": "Dare Devil Presents: Improv Night",
         "type": "improv",
-        "date": "2025-12-10",
+        "date": "2025-12-17",
         "time": "8:30 PM",
         "venue": "Dead Crow Comedy Room",
         "address": "511 N 3rd Street",
         "price": "FREE",
-        "description": "Weekly improv comedy show with spontaneous performances based on audience suggestions. Free admission, first come, first served seating.",
+        "description": "The Dead Crow Improv Show is spontaneous comedy made up right before your eyes -- much of it based off what you suggest! Come on down for this hootenanny EVERY WEDNESDAY starting at 8:30! FREE ADMISSION! No advanced ticketing or reservations available. All seating first come, first served.",
         "link": "https://deadcrowcomedy-com.seatengine.com",
         "recurring": true,
-        "id": 8
+        "id": 2
     },
     {
-        "name": "Barzarre Monday Open Mic",
+        "name": "Open Mic Comedy",
         "type": "openmic",
-        "date": "2025-12-15",
+        "date": "2025-12-18",
         "time": "8:00 PM",
-        "venue": "Barzarre",
+        "venue": "Dead Crow Comedy Room",
+        "address": "511 N 3rd Street",
+        "price": "FREE",
+        "description": "Every Thursday Dead Crow Comedy Room hosts the best open mic in all the land! Aspiring comics, both seasoned and new can sign up to try and keep the crowd laughing. Doors 6:30PM. Performer sign up 7PM -- Showtime 8PM. This is a free event - ticket purchase and reservations unavailable - seating is first come, first served.",
+        "link": "https://deadcrowcomedy-com.seatengine.com",
+        "recurring": true,
+        "id": 3
+    },
+    {
+        "name": "Monday Open Mic",
+        "type": "openmic",
+        "date": "2025-12-22",
+        "time": "8:00 PM",
+        "venue": "Bizarre",
         "address": "1610 Castle Street",
         "price": "FREE",
-        "description": "Weekly Monday open mic night for comedy and other performances.",
-        "link": null,
+        "description": "Monday open mics at Bizarre.",
+        "link": "",
         "recurring": true,
-        "id": 9
+        "id": 4
     },
     {
-        "name": "Laws & Libations Wednesday Open Mic",
+        "name": "Tuesday Comedy Open Mic",
         "type": "openmic",
-        "date": "2025-12-10",
-        "time": "8:00 PM",
-        "venue": "Laws & Libations",
-        "address": "108 Grace Street",
-        "price": "FREE",
-        "description": "Weekly Wednesday open mic night for comedy and other acts.",
-        "link": null,
-        "recurring": true,
-        "id": 10
-    },
-    {
-        "name": "Laws & Libations Thursday Comedy Show",
-        "type": "standup",
-        "date": "2025-12-11",
-        "time": "8:00 PM",
-        "venue": "Laws & Libations",
-        "address": "108 Grace Street",
-        "price": "FREE",
-        "description": "Weekly Thursday comedy show featuring local comedians.",
-        "link": null,
-        "recurring": true,
-        "id": 11
-    },
-    {
-        "name": "Port City Cheesesteak Co Tuesday Comedy Open Mic",
-        "type": "openmic",
-        "date": "2025-12-09",
+        "date": "2025-12-16",
         "time": "8:00 PM",
         "venue": "Port City Cheesesteak Co",
         "address": "21 N Front Street",
         "price": "FREE",
-        "description": "Weekly Tuesday comedy open mic night.",
-        "link": null,
+        "description": "Tuesday comedy open mic at Port City Cheesesteak Co.",
+        "link": "",
         "recurring": true,
-        "id": 12
+        "id": 5
+    },
+    {
+        "name": "Wednesday Open Mic",
+        "type": "openmic",
+        "date": "2025-12-17",
+        "time": "8:00 PM",
+        "venue": "Laws & Libations",
+        "address": "108 Grace Street",
+        "price": "FREE",
+        "description": "Wednesday open mics at Laws & Libations.",
+        "link": "",
+        "recurring": true,
+        "id": 6
+    },
+    {
+        "name": "Thursday Show",
+        "type": "standup",
+        "date": "2025-12-18",
+        "time": "8:00 PM",
+        "venue": "Laws & Libations",
+        "address": "108 Grace Street",
+        "price": "FREE",
+        "description": "Thursday shows at Laws & Libations.",
+        "link": "",
+        "recurring": true,
+        "id": 7
     }
 ];
 
@@ -563,5 +498,5 @@ window.WilmingtonLaughs = {
     loadSubmissions,
     clearSubmissions: () => localStorage.removeItem(SUBMISSIONS_KEY),
     clearEvents: () => localStorage.removeItem(STORAGE_KEY),
-    lastUpdated: '2025-12-08T11:14:49.270Z'
+    lastUpdated: '2025-12-15T11:14:39.409Z'
 };
