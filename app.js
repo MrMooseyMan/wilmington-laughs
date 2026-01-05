@@ -2,7 +2,7 @@
    WILMINGTON LAUGHS - JavaScript
    Event data, filtering, form handling
 
-   LAST UPDATED: 2025-12-29T11:14:48.711Z
+   LAST UPDATED: 2026-01-05T11:14:46.185Z
    Events are automatically scraped weekly via Perplexity API
    ============================================ */
 
@@ -12,160 +12,121 @@
 
 const scrapedEvents = [
     {
-        "name": "New Year's Eve with Caleb Elliott",
+        "name": "Sam Jay",
         "type": "standup",
-        "date": "2025-12-31",
-        "time": "TBD",
+        "date": "2026-01-09",
+        "time": "7:00 PM",
         "venue": "Dead Crow Comedy Room",
         "address": "511 N 3rd Street",
-        "price": "$15-20",
-        "description": "New Year's Eve show featuring rising comedian Caleb Elliott, known for his unique delivery, Dry Bar Comedy Special 'DIARY OF A SMOOTH BLACK KID', and appearances on STAND UP NASHVILLE and NATELAND PRESENTS.",
-        "link": "https://deadcrowcomedy-com.seatengine.com",
+        "price": "$61+",
+        "description": "Stand-up comic, actor, and Emmy-nominated writer Sam Jay live at Dead Crow Comedy Room.",
+        "link": "https://punchup.live/e/4ace48e4-036d-4525-9c9b-dccfd6db3e85",
         "recurring": false,
         "id": 1
     },
     {
-        "name": "Cliff Cash",
+        "name": "Sam Jay",
         "type": "standup",
-        "date": "2026-01-02",
-        "time": "7:00 PM",
+        "date": "2026-01-09",
+        "time": "9:30 PM",
         "venue": "Dead Crow Comedy Room",
         "address": "511 N 3rd Street",
-        "price": "$15-20",
-        "description": "Wilmington native Cliff Cash, winner of Port City’s Top Comic, finalist in Comedy Central’s UpNext and Standup NBC, performing at his home club.",
-        "link": "https://deadcrowcomedy-com.seatengine.com",
+        "price": "$61+",
+        "description": "Stand-up comic, actor, and Emmy-nominated writer Sam Jay live at Dead Crow Comedy Room.",
+        "link": "https://punchup.live/e/4ace48e4-036d-4525-9c9b-dccfd6db3e85",
         "recurring": false,
         "id": 2
     },
     {
-        "name": "Cliff Cash",
+        "name": "Sam Jay",
         "type": "standup",
-        "date": "2026-01-03",
+        "date": "2026-01-10",
         "time": "7:00 PM",
         "venue": "Dead Crow Comedy Room",
         "address": "511 N 3rd Street",
-        "price": "$15-20",
-        "description": "Wilmington native Cliff Cash, winner of Port City’s Top Comic, finalist in Comedy Central’s UpNext and Standup NBC, performing at his home club.",
-        "link": "https://deadcrowcomedy-com.seatengine.com",
+        "price": "$61+",
+        "description": "Stand-up comic, actor, and Emmy-nominated writer Sam Jay live at Dead Crow Comedy Room.",
+        "link": "https://punchup.live/e/4ace48e4-036d-4525-9c9b-dccfd6db3e85",
         "recurring": false,
         "id": 3
     },
     {
-        "name": "Barzarre Monday Open Mic",
-        "type": "openmic",
-        "date": "2025-12-29",
-        "time": "8:00 PM",
-        "venue": "Barzarre",
-        "address": "1610 Castle Street",
-        "price": "FREE",
-        "description": "Weekly Monday open mic comedy night.",
-        "link": "",
-        "recurring": true,
+        "name": "Sam Jay",
+        "type": "standup",
+        "date": "2026-01-10",
+        "time": "9:30 PM",
+        "venue": "Dead Crow Comedy Room",
+        "address": "511 N 3rd Street",
+        "price": "$61+",
+        "description": "Stand-up comic, actor, and Emmy-nominated writer Sam Jay live at Dead Crow Comedy Room.",
+        "link": "https://punchup.live/e/4ace48e4-036d-4525-9c9b-dccfd6db3e85",
+        "recurring": false,
         "id": 4
     },
     {
-        "name": "Barzarre Monday Open Mic",
-        "type": "openmic",
-        "date": "2026-01-05",
-        "time": "8:00 PM",
-        "venue": "Barzarre",
-        "address": "1610 Castle Street",
-        "price": "FREE",
-        "description": "Weekly Monday open mic comedy night.",
-        "link": "",
-        "recurring": true,
-        "id": 5
-    },
-    {
-        "name": "Barzarre Monday Open Mic",
+        "name": "Barzarre Open Mic",
         "type": "openmic",
         "date": "2026-01-12",
         "time": "8:00 PM",
         "venue": "Barzarre",
         "address": "1610 Castle Street",
         "price": "FREE",
-        "description": "Weekly Monday open mic comedy night.",
+        "description": "Monday open mic comedy night at Barzarre.",
         "link": "",
         "recurring": true,
-        "id": 6
+        "id": 5
     },
     {
-        "name": "Laws & Libations Wednesday Open Mic",
-        "type": "openmic",
-        "date": "2025-12-31",
-        "time": "8:00 PM",
-        "venue": "Laws & Libations",
-        "address": "108 Grace Street",
-        "price": "FREE",
-        "description": "Weekly Wednesday open mic comedy night.",
-        "link": "",
-        "recurring": true,
-        "id": 7
-    },
-    {
-        "name": "Laws & Libations Wednesday Open Mic",
-        "type": "openmic",
-        "date": "2026-01-07",
-        "time": "8:00 PM",
-        "venue": "Laws & Libations",
-        "address": "108 Grace Street",
-        "price": "FREE",
-        "description": "Weekly Wednesday open mic comedy night.",
-        "link": "",
-        "recurring": true,
-        "id": 8
-    },
-    {
-        "name": "Laws & Libations Thursday Show",
-        "type": "standup",
-        "date": "2026-01-01",
-        "time": "8:00 PM",
-        "venue": "Laws & Libations",
-        "address": "108 Grace Street",
-        "price": "FREE",
-        "description": "Weekly Thursday comedy shows.",
-        "link": "",
-        "recurring": true,
-        "id": 9
-    },
-    {
-        "name": "Laws & Libations Thursday Show",
-        "type": "standup",
-        "date": "2026-01-08",
-        "time": "8:00 PM",
-        "venue": "Laws & Libations",
-        "address": "108 Grace Street",
-        "price": "FREE",
-        "description": "Weekly Thursday comedy shows.",
-        "link": "",
-        "recurring": true,
-        "id": 10
-    },
-    {
-        "name": "Port City Cheesesteak Co Tuesday Open Mic",
-        "type": "openmic",
-        "date": "2025-12-30",
-        "time": "8:00 PM",
-        "venue": "Port City Cheesesteak Co",
-        "address": "21 N Front Street",
-        "price": "FREE",
-        "description": "Weekly Tuesday comedy open mic.",
-        "link": "",
-        "recurring": true,
-        "id": 11
-    },
-    {
-        "name": "Port City Cheesesteak Co Tuesday Open Mic",
+        "name": "Port City Cheesesteak Open Mic",
         "type": "openmic",
         "date": "2026-01-06",
         "time": "8:00 PM",
         "venue": "Port City Cheesesteak Co",
         "address": "21 N Front Street",
         "price": "FREE",
-        "description": "Weekly Tuesday comedy open mic.",
+        "description": "Tuesday comedy open mic at Port City Cheesesteak Co.",
         "link": "",
         "recurring": true,
-        "id": 12
+        "id": 6
+    },
+    {
+        "name": "Laws & Libations Open Mic",
+        "type": "openmic",
+        "date": "2026-01-07",
+        "time": "8:00 PM",
+        "venue": "Laws & Libations",
+        "address": "108 Grace Street",
+        "price": "FREE",
+        "description": "Wednesday open mic comedy night at Laws & Libations.",
+        "link": "",
+        "recurring": true,
+        "id": 7
+    },
+    {
+        "name": "Laws & Libations Show",
+        "type": "standup",
+        "date": "2026-01-08",
+        "time": "8:00 PM",
+        "venue": "Laws & Libations",
+        "address": "108 Grace Street",
+        "price": "FREE",
+        "description": "Thursday comedy show at Laws & Libations.",
+        "link": "",
+        "recurring": true,
+        "id": 8
+    },
+    {
+        "name": "Scott Thompson",
+        "type": "standup",
+        "date": "2026-01-23",
+        "time": "7:00 PM",
+        "venue": "Dead Crow Comedy Room",
+        "address": "511 N 3rd Street",
+        "price": "",
+        "description": "Scott Thompson, known for appearances on Late Night with Conan O’Brien and other talk shows, live at Dead Crow.",
+        "link": "https://www.vividseats.com/scott-thompson-tickets-wilmington-dead-crow-comedy-room-1-23-2026/production/6481603",
+        "recurring": false,
+        "id": 9
     }
 ];
 
@@ -563,5 +524,5 @@ window.WilmingtonLaughs = {
     loadSubmissions,
     clearSubmissions: () => localStorage.removeItem(SUBMISSIONS_KEY),
     clearEvents: () => localStorage.removeItem(STORAGE_KEY),
-    lastUpdated: '2025-12-29T11:14:48.711Z'
+    lastUpdated: '2026-01-05T11:14:46.185Z'
 };
