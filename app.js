@@ -2,7 +2,7 @@
    WILMINGTON LAUGHS - JavaScript
    Event data, filtering, form handling
 
-   LAST UPDATED: 2026-01-05T11:14:46.185Z
+   LAST UPDATED: 2026-01-12T11:15:25.018Z
    Events are automatically scraped weekly via Perplexity API
    ============================================ */
 
@@ -12,108 +12,17 @@
 
 const scrapedEvents = [
     {
-        "name": "Sam Jay",
-        "type": "standup",
-        "date": "2026-01-09",
-        "time": "7:00 PM",
+        "name": "Open Mic Comedy",
+        "type": "openmic",
+        "date": "2026-01-15",
+        "time": "8:00 PM",
         "venue": "Dead Crow Comedy Room",
         "address": "511 N 3rd Street",
-        "price": "$61+",
-        "description": "Stand-up comic, actor, and Emmy-nominated writer Sam Jay live at Dead Crow Comedy Room.",
-        "link": "https://punchup.live/e/4ace48e4-036d-4525-9c9b-dccfd6db3e85",
-        "recurring": false,
+        "price": "FREE",
+        "description": "Every Thursday open mic for aspiring comics. Doors 6:30PM. Performer sign up 7PM -- Showtime 8PM. Seating first come, first served.",
+        "link": "https://deadcrowcomedy-com.seatengine.com",
+        "recurring": true,
         "id": 1
-    },
-    {
-        "name": "Sam Jay",
-        "type": "standup",
-        "date": "2026-01-09",
-        "time": "9:30 PM",
-        "venue": "Dead Crow Comedy Room",
-        "address": "511 N 3rd Street",
-        "price": "$61+",
-        "description": "Stand-up comic, actor, and Emmy-nominated writer Sam Jay live at Dead Crow Comedy Room.",
-        "link": "https://punchup.live/e/4ace48e4-036d-4525-9c9b-dccfd6db3e85",
-        "recurring": false,
-        "id": 2
-    },
-    {
-        "name": "Sam Jay",
-        "type": "standup",
-        "date": "2026-01-10",
-        "time": "7:00 PM",
-        "venue": "Dead Crow Comedy Room",
-        "address": "511 N 3rd Street",
-        "price": "$61+",
-        "description": "Stand-up comic, actor, and Emmy-nominated writer Sam Jay live at Dead Crow Comedy Room.",
-        "link": "https://punchup.live/e/4ace48e4-036d-4525-9c9b-dccfd6db3e85",
-        "recurring": false,
-        "id": 3
-    },
-    {
-        "name": "Sam Jay",
-        "type": "standup",
-        "date": "2026-01-10",
-        "time": "9:30 PM",
-        "venue": "Dead Crow Comedy Room",
-        "address": "511 N 3rd Street",
-        "price": "$61+",
-        "description": "Stand-up comic, actor, and Emmy-nominated writer Sam Jay live at Dead Crow Comedy Room.",
-        "link": "https://punchup.live/e/4ace48e4-036d-4525-9c9b-dccfd6db3e85",
-        "recurring": false,
-        "id": 4
-    },
-    {
-        "name": "Barzarre Open Mic",
-        "type": "openmic",
-        "date": "2026-01-12",
-        "time": "8:00 PM",
-        "venue": "Barzarre",
-        "address": "1610 Castle Street",
-        "price": "FREE",
-        "description": "Monday open mic comedy night at Barzarre.",
-        "link": "",
-        "recurring": true,
-        "id": 5
-    },
-    {
-        "name": "Port City Cheesesteak Open Mic",
-        "type": "openmic",
-        "date": "2026-01-06",
-        "time": "8:00 PM",
-        "venue": "Port City Cheesesteak Co",
-        "address": "21 N Front Street",
-        "price": "FREE",
-        "description": "Tuesday comedy open mic at Port City Cheesesteak Co.",
-        "link": "",
-        "recurring": true,
-        "id": 6
-    },
-    {
-        "name": "Laws & Libations Open Mic",
-        "type": "openmic",
-        "date": "2026-01-07",
-        "time": "8:00 PM",
-        "venue": "Laws & Libations",
-        "address": "108 Grace Street",
-        "price": "FREE",
-        "description": "Wednesday open mic comedy night at Laws & Libations.",
-        "link": "",
-        "recurring": true,
-        "id": 7
-    },
-    {
-        "name": "Laws & Libations Show",
-        "type": "standup",
-        "date": "2026-01-08",
-        "time": "8:00 PM",
-        "venue": "Laws & Libations",
-        "address": "108 Grace Street",
-        "price": "FREE",
-        "description": "Thursday comedy show at Laws & Libations.",
-        "link": "",
-        "recurring": true,
-        "id": 8
     },
     {
         "name": "Scott Thompson",
@@ -122,11 +31,37 @@ const scrapedEvents = [
         "time": "7:00 PM",
         "venue": "Dead Crow Comedy Room",
         "address": "511 N 3rd Street",
-        "price": "",
-        "description": "Scott Thompson, known for appearances on Late Night with Conan O’Brien and other talk shows, live at Dead Crow.",
-        "link": "https://www.vividseats.com/scott-thompson-tickets-wilmington-dead-crow-comedy-room-1-23-2026/production/6481603",
+        "price": "$101+",
+        "description": "Stand-up comedy show featuring Scott Thompson.",
+        "link": "https://www.unation.com/event/scott-thompson-62962044/",
         "recurring": false,
-        "id": 9
+        "id": 2
+    },
+    {
+        "name": "Shuler King",
+        "type": "standup",
+        "date": "2026-01-30",
+        "time": "7:00 PM",
+        "venue": "Dead Crow Comedy Room",
+        "address": "511 N 3rd Street",
+        "price": "$71+",
+        "description": "Stand-up comedy show featuring Shuler King. 21+ event.",
+        "link": "https://www.vividseats.com/shuler-king-tickets-wilmington-dead-crow-comedy-room-1-30-2026/production/6481543",
+        "recurring": false,
+        "id": 3
+    },
+    {
+        "name": "Open Mic Comedy (after Shuler King)",
+        "type": "openmic",
+        "date": "2026-01-30",
+        "time": "9:00 PM",
+        "venue": "Dead Crow Comedy Room",
+        "address": "511 N 3rd Street",
+        "price": "FREE",
+        "description": "Open mic starting after Shuler King show. Sign up 7-8PM. Doors 6PM.",
+        "link": "https://deadcrowcomedy-com.seatengine.com",
+        "recurring": false,
+        "id": 4
     }
 ];
 
@@ -524,5 +459,5 @@ window.WilmingtonLaughs = {
     loadSubmissions,
     clearSubmissions: () => localStorage.removeItem(SUBMISSIONS_KEY),
     clearEvents: () => localStorage.removeItem(STORAGE_KEY),
-    lastUpdated: '2026-01-05T11:14:46.185Z'
+    lastUpdated: '2026-01-12T11:15:25.018Z'
 };
